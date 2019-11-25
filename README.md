@@ -1,16 +1,3 @@
-  constructor(props){
-    super(props);
-    this.state={
-      region : null,
-      }
-      this._getLocationAsync();
-      }
-      _getLocationAsync = async () =>{
-        let {status} = await Permissions.askAsync(Permissions.LOCATION);
-        if (status !== 'granted')
-        console.log('Permission to access location was denied.');
-        let location = await Location.getCurrentPositionAsync({enableHighAccuracy : true});
-       
         let region = {
           latitude :   location.coords.latitude,
           longitude : location.coords.longitude,
