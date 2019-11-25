@@ -1,9 +1,3 @@
-import React from 'react';
-import MapView from 'react-native-maps';
-import { StyleSheet, View, Dimensions,Permissions,Location } from 'react-native';
-import Destinationbutton from './components/Destinationbutton';
-import CurrentLocationButton from './components/CurrentLocationButton';
-export default class App extends React.Component {
   constructor(props){
     super(props);
     this.state={
